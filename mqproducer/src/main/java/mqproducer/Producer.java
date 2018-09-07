@@ -9,9 +9,9 @@ public class Producer {
 
     public static void main( String[] args ) throws Exception {
 
-        DefaultMQProducer producer = new DefaultMQProducer("niwei_producer_group");
+        DefaultMQProducer producer = new DefaultMQProducer("producer_group");
 
-        producer.setNamesrvAddr("localhost:9876");
+        producer.setNamesrvAddr("192.168.80.137:9876");
 
         producer.start();
 
